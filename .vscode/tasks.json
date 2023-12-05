@@ -5,7 +5,7 @@
 			"label": "npmInstall",
 			"type": "npm",
 			"script": "install",
-			"group": "clean",
+			"group": "build",
 			"problemMatcher": [],
 			"detail": "install dependencies from package"
 		}
