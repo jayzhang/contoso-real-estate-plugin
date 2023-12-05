@@ -27,5 +27,5 @@ app.get("/.well-known/ai-plugin.json", (req, res) => {
 app.get("/logo.png", (req, res) => {
   res.sendFile(path.resolve() + "/logo.png");
 });
-
+console.log("Listening on port 8080");
 app.listen(8080);
