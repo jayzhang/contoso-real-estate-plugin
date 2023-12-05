@@ -1,8 +1,12 @@
 import express from "express";
 import getListings from "./get-listings.js"
 import path from "path";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors({ origin: "https://www.bing.com" }));
+
 app.get("/get-listings", (req, res) => {
    const city = req.query.city;
    const bedrooms = parseInt(req.query.bedrooms);
